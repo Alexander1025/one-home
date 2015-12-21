@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>swiper</title>
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style>
+		.swiper-container {
+			width: 100%;
+		}
+		.swiper-slide {
+			display: block;
+			width: 100%;
+		}
+		.swiper-slide img {
+			display: block;
+			width:100%;
+		}
+		.pagination {
+		  position: absolute;
+		  left: 0;
+		  text-align: center;
+		  bottom:5px;
+		  width: 100%;
+		}
+		.swiper-pagination-switch {
+		  display: inline-block;
+		  width: 10px;
+		  height: 10px;
+		  border-radius: 10px;
+		  background: white;
+		  box-shadow: 0px 1px 2px #555 inset;
+		  margin: 0 3px;
+		  cursor: pointer;
+		}
+		.swiper-active-switch {
+		  background: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部滑动图 BEING -->
+	<div class="swiper-container">
+	     <div class="swiper-wrapper">
+	       <a href="###" class="swiper-slide"> <img src="images/bb.jpg"> </a>
+	       <a href="###" class="swiper-slide"> <img src="images/bb.jpg"> </a>
+	       <a href="###" class="swiper-slide"> <img src="images/bb.jpg"> </a>
+	       <a href="###" class="swiper-slide"> <img src="images/bb.jpg"> </a>
+	     </div>
+	     <div class="pagination"></div>
+	</div>
+	<!-- 头部滑动图 END -->
+	<!-- 导航图标 BEING -->
+	<div class="nav">
+		<a class="house" href="javascript:void(0);">
+			验房量房
+		</a><a class="budget" href="javascript:void(0);">
+			装修预算
+		</a><a class="" href="javascript:void(0);">
+			效果图
+		</a><a class="" href="javascript:void(0);">
+			设计师
+		</a><a class="" href="javascript:void(0);">
+			微工地
+		</a><a class="" href="javascript:void(0);">
+			装修攻略
+		</a><a class="" href="javascript:void(0);">
+			体验馆
+		</a><a class="" href="javascript:void(0);">
+			家居商城
+		</a>
+	</div>
+	<!-- 导航图标 END -->
+	<!-- 效果图 BEGIN -->
+	<div class="housepic">
+		<div class="housepic_top">
+			装修效果图&nbsp;&nbsp;装修效果图
+		</div>
+		<div class="housepic_mian">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+		</div>
+	</div>
+	<!-- 效果图 END -->
+	<!-- 这里是js BEING -->
+	<script src="js/idangerous.swiper.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container',{
+		    pagination: '.pagination',
+		    loop:true,
+		    grabCursor: true,
+		    paginationClickable: true,
+		    calculateHeight:true
+		  })
+	</script>
+	<!-- 这里是js END -->
+</body>
+</html>
